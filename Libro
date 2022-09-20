@@ -1,0 +1,25 @@
+package pruebacancion;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author diedr
+ */
+public class Pruebacancion {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+           Scanner scanner = new Scanner(System.in);
+      System.out.println("Ingrese el nombre del autor de la cancion: ");
+      String autor = scanner.nextLine();
+      System.out.println("Ingrese el titulo de la cancion: ");
+      String titulo = scanner.nextLine();
+      cancion cancion1 = new cancion(autor, titulo);
+      System.out.println(cancion1.toString());
+    }
+    
+}
